@@ -1,18 +1,33 @@
-## Getting Started
+# Hostinger Test Task Automation
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains an automated test script for the Hostinger test task, it simulates buying a product, selecting shipping details, entering contact information, and placing an order.
 
-## Folder Structure
+## Prerequisites
 
-The workspace contains two folders by default, where:
+- **Java Development Kit (JDK)** - JDK 11 or later.
+- **Maven** - For dependencies.
+- **Google Chrome** - Ensure Chrome is installed.
+- **ChromeDriver** - Ensure ChromeDriver is installed.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Setup Instructions
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/deividasmarco/HostingerTestTask.git
+   ```bash
+   cd HostingerTestTask
+2. **Run the Test**:
+Open a terminal in the project directory.
+Run the following Maven command to execute the test:
+    ```bash
+    mvn test
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+    Test Overview
+The test automates the following steps:
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Opens the sample e-commerce website.
+Adds a product to the cart.
+Proceeds to checkout, selects the shipping destination, and enters contact information.
+Completes the order and verifies the order confirmation.
+Notes
+The test script is located in src/test/java/com/hostinger/automation/PurchaseTest.java.
