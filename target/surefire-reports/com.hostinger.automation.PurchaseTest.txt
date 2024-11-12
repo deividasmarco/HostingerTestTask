@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.hostinger.automation.PurchaseTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.945 s <<< FAILURE! - in com.hostinger.automation.PurchaseTest
+com.hostinger.automation.PurchaseTest.testPurchaseInitiation  Time elapsed: 1.896 s  <<< ERROR!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:49927/devtools/browser/9f1cf73b-0aed-4ad7-9373-3921c27040c4
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: driver.version: ChromeDriver
+	at com.hostinger.automation.PurchaseTest.setUp(PurchaseTest.java:25)
+
